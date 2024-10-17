@@ -6,7 +6,7 @@ function twoSum(nums, target) {
         const complement = target - nums[i];
 
         if (numMap.has(complement)) {
-            return [numMap.get(complement)]
+            return [numMap.get(complement), i]
         }
         numMap.set(nums[i], i)
     }
